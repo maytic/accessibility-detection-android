@@ -61,5 +61,7 @@ dependencies {
     // Source: https://mvnrepository.com/artifact/com.google.mediapipe/tasks-vision
     implementation(libs.tasks.vision)
     implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.androidx.media3.ui)
 
 }
