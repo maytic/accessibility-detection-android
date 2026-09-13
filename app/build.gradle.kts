@@ -34,6 +34,10 @@ android {
     buildFeatures {
         compose = true
     }
+
+    androidResources {
+        noCompress += "tflite"
+    }
 }
 
 dependencies {
@@ -55,5 +59,7 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
     // Source: https://mvnrepository.com/artifact/com.google.mediapipe/tasks-vision
-    runtimeOnly("com.google.mediapipe:tasks-vision:1.0.0")
+    implementation(libs.tasks.vision)
+    implementation(libs.androidx.camera.camera2)
+
 }
